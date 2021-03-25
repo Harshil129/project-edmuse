@@ -25,7 +25,7 @@ class PersonTest {
     @Test
     void setFirstNameInvalidEmpty() {
         assertThrows(IllegalArgumentException.class, ()->
-                person.setFirstName(""));
+                person.setFirstName(" "));
     }
 
     @Test
@@ -49,7 +49,7 @@ class PersonTest {
     @Test
     void setLastNameInvalidEmpty() {
         assertThrows(IllegalArgumentException.class, ()->
-                person.setLastName(""));
+                person.setLastName(" "));
     }
 
     @Test
